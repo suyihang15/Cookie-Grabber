@@ -89,4 +89,8 @@ cookie-ext/
 | `storage` | 持久化存储采集记录 |
 | `scripting` | 注入脚本读取 document.cookie |
 | `activeTab` | 仅在用户点击扩展时激活 |
-| `<all_urls>` | 允许访问任意网站的 Cookie |
+| `<all_urls>` | 允许访问任意网站的 Cookie |   
+
+   ## 效果展示    
+   <img width="344" height="472" alt="屏幕截图 2026-09-24 231139" src="https://github.com/user-attachments/assets/acd8e064-2dfd-4666-ac84-3c5e4494638b" />
+
