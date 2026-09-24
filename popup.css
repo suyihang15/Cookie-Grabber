@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 420px;
+  font-family: "Microsoft YaHei UI", "Segoe UI", sans-serif;
+  background: #1a1b26;
+  color: #c0caf5;
+  font-size: 13px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 540px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #16161e;
+  border-bottom: 1px solid #292e42;
+}
+
+.header h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7aa2f7;
+}
+
+.btn {
+  padding: 5px 12px;
+  border: 1px solid #292e42;
+  border-radius: 6px;
+  background: #24283b;
+  color: #c0caf5;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.15s;
+}
+
+.btn:hover {
+  background: #292e42;
+  border-color: #7aa2f7;
+}
+
+.btn.primary {
+  background: #7aa2f7;
+  color: #1a1b26;
+  border-color: #7aa2f7;
+  font-weight: 600;
+}
+
+.btn.primary:hover {
+  background: #89b4fa;
+}
+
+.btn.small {
+  padding: 3px 10px;
+  font-size: 11px;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  color: #565f89;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 4px;
+  line-height: 1;
+}
+
+.btn-icon:hover {
+  color: #f7768e;
+}
+
+.site-panel {
+  border-bottom: 1px solid #292e42;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.section-title {
+  font-size: 11px;
+  color: #565f89;
+  padding: 6px 14px 4px;
+  font-weight: 600;
+}
+
+.site-list {
+  padding: 0 10px 6px;
+}
+
+.site-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: transparent;
+}
+
+.site-item:hover {
+  background: #24283b;
+}
+
+.site-item.active {
+  background: #24283b;
+  border-left: 3px solid #7aa2f7;
+}
+
+.site-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #c0caf5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.site-info {
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+  color: #565f89;
+  flex-shrink: 0;
+}
+
+.cookie-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.cookie-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #1e2030;
+  border-bottom: 1px solid #292e42;
+}
+
+.site-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #9ece6a;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge {
+  background: #7aa2f7;
+  color: #1a1b26;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 8px;
+}
+
+.filter-bar {
+  padding: 6px 14px;
+}
+
+.filter-bar input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #292e42;
+  border-radius: 5px;
+  background: #24283b;
+  color: #c0caf5;
+  font-size: 12px;
+  outline: none;
+}
+
+.filter-bar input:focus {
+  border-color: #7aa2f7;
+}
+
+.filter-bar input::placeholder {
+  color: #565f89;
+}
+
+.cookie-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 14px;
+}
+
+.cookie-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cookie-list::-webkit-scrollbar-track {
+  background: #1a1b26;
+}
+
+.cookie-list::-webkit-scrollbar-thumb {
+  background: #292e42;
+  border-radius: 3px;
+}
+
+.empty-tip {
+  text-align: center;
+  color: #565f89;
+  padding: 20px 0;
+  font-size: 12px;
+}
+
+.cookie-item {
+  padding: 7px 10px;
+  margin-bottom: 3px;
+  background: #24283b;
+  border-radius: 5px;
+  border: 1px solid #292e42;
+}
+
+.cookie-item:hover {
+  border-color: #7aa2f7;
+}
+
+.cookie-name {
+  font-weight: 600;
+  color: #bb9af7;
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.cookie-value {
+  color: #9ece6a;
+  font-size: 11px;
+  margin-top: 2px;
+  word-break: break-all;
+  max-height: 36px;
+  overflow: hidden;
+  font-family: "Cascadia Code", "Consolas", monospace;
+}
+
+.cookie-meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 3px;
+  font-size: 10px;
+  color: #565f89;
+}
+
+.tag {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.tag.secure {
+  background: #1e3a2f;
+  color: #9ece6a;
+}
+
+.tag.httponly {
+  background: #2d3548;
+  color: #7aa2f7;
+}
+
+.tag.doc {
+  background: #3d2d1e;
+  color: #e0af68;
+}
+
+.export-bar {
+  display: flex;
+  gap: 6px;
+  padding: 6px 14px;
+  background: #16161e;
+  border-top: 1px solid #292e42;
+}
+
+.status-bar {
+  padding: 5px 14px;
+  background: #16161e;
+  border-top: 1px solid #292e42;
+  font-size: 11px;
+  color: #565f89;
+}

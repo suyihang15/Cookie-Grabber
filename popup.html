@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Cookie Grabber</h1>
+      <button id="btnGrab" class="btn primary">采集</button>
+    </div>
+
+    <div class="site-panel">
+      <div class="section-title">已采集站点</div>
+      <div class="site-list" id="siteList">
+        <div class="empty-tip">点击「采集」获取完整Cookie</div>
+      </div>
+    </div>
+
+    <div class="cookie-panel" id="cookiePanel" style="display:none">
+      <div class="cookie-header">
+        <span class="site-label" id="siteLabel"></span>
+        <span class="badge" id="countBadge">0</span>
+        <button id="btnClear" class="btn-icon" title="删除此站点记录">&times;</button>
+      </div>
+
+      <div class="filter-bar">
+        <input type="text" id="filterInput" placeholder="过滤 Cookie 名称...">
+      </div>
+
+      <div class="cookie-list" id="cookieList"></div>
+
+      <div class="export-bar">
+        <button id="btnJSON" class="btn small">JSON</button>
+        <button id="btnHeader" class="btn small">Header</button>
+        <button id="btnCopy" class="btn small">复制</button>
+      </div>
+    </div>
+
+    <div class="status-bar" id="statusBar">就绪</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
